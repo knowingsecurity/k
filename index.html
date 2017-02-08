@@ -10,44 +10,18 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css.css" rel="stylesheet" type="text/css" />
-          <title>Knowing Security</title>
+    <title>Knowing Security</title>
     <script src='1modernizr' type="text/javascript" defer></script>
-
     <script src="2jquery"></script>
-
     <script src='3jqueryval' type="text/javascript" defer></script>
-
     <script src='4jscommon' type="text/javascript" defer></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
 </head>
 
-
-<script>
-
-$(function () {
-    $("#nav_page_a").on("click", function () {
-        $("#main").load("Anomaly Detection.mht");
-    });
-    $("#nav_page_b").on("click", function () {
-        $("#main").load("PageB.html");
-    });
-});
-
-
-</script>
-
-
-
-
-
-
-
-
-
 <body>
    
- <div class="navbar navbar-fixed-top">
+ 	<div class="navbar navbar-fixed-top">
         <div class="navbar-inner"><div class="container-fluid">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
@@ -55,14 +29,17 @@ $(function () {
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="/blog-en/default.aspx"><b>Knowing Security</b></a>
-                
-<div class="nav-collapse">
+        <div class="nav-collapse">
                     <ul class="nav">
+
+
  <!--                    
 <li class="dropdown">
 
 <a href="/projects/default.aspx" class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
-<ul class="dropdown-menu"><li><a href="/projects/asn1editor/default.aspx">ASN.1 Editor</a></li><li><a href="/projects/pspki/default.aspx">PowerShell PKI Module</a></li><li><a href="/projects/sslverifier/default.aspx">SSL Certificate Verifier Tool</a></li></ul></li><li><a href="/blog-ru/default.aspx">Former blog</a></li><li><a href="/blog-en/default.aspx">Main blog</a></li><li><a href="/documentation/default.aspx">Documentation</a></li>
+<ul class="dropdown-menu"><li><a href="/projects/asn1editor/default.aspx">ASN.1 Editor</a></li><li><a href="/projects/pspki/default.aspx">PowerShell PKI Module</a></li><li><a href="/projects/sslverifier/default.aspx">SSL Certificate Verifier 
+
+Tool</a></li></ul></li><li><a href="/blog-ru/default.aspx">Former blog</a></li><li><a href="/blog-en/default.aspx">Main blog</a></li><li><a href="/documentation/default.aspx">Documentation</a></li>
  </ul>
 
                 
@@ -76,55 +53,58 @@ $(function () {
             </div>
 	</div>
     </div>
-    <div class="container-fluid">
-        <div class="row-fluid">
-<div class="span2 hidden-print hidden-phone">
-    <div class="sidebar-nav">
-    <div class="well" style="padding: 8px 0;">
-        <ul class="nav nav-list">
-            <li class="nav-header"><a href="/about.aspx">About</a></li>
-        </ul>
-        <figure class="image" style="text-align: center; margin: 5px;">
-            <img width="96" height="96" alt="Venkatesh Chinta" src="Venkatesh Chinta.jpg" />
-            <figcaption style="text-align: center; margin-top: 5px;"><strong>Venkatesh Chinta</strong></figcaption>
-        </figure>
-    </div>
-</div>
+
+
+
+
+		<div class="container-fluid">
+       		 <div class="row-fluid">
+		<div class="span2 hidden-print hidden-phone">
+    		<div class="sidebar-nav">
+    		<div class="well" style="padding: 8px 0;">
+       		 <ul class="nav nav-list">
+           	 <li class="nav-header"><a href="/about.aspx">About</a></li>
+       			 </ul>
+        	<figure class="image" style="text-align: center; margin: 5px;">
+           	 <img width="96" height="96" alt="Venkatesh Chinta" src="Venkatesh Chinta.jpg" />
+            	<figcaption style="text-align: center; margin-top: 5px;"><strong>Venkatesh Chinta</strong></figcaption>
+        	</figure>
+    	</div>
+	</div>
+
+
+
+
          
-
-
-
-
-
-
-  <div class="sidebar-nav">
-            <div class="well" style="padding: 8px 0;">
+		<div class="sidebar-nav">
+         	   <div class="well" style="padding: 8px 0;">
                 <ul class="nav nav-list">
                     <li class="nav-header">Categories</li>
 
 
-<li><a href="#nav_page_a" >Anamoly Detection</a>
+
+	<li><a href="#nav_page_a" >Anamoly Detection</a>
 	<ul class="clearbullet"><li><a href="/blog-en/categoryview/securitypki.aspx">OS </a></ul>
 	<ul class="clearbullet"><li><a href="/blog-en/categoryview/securitypki.aspx">Network</a></ul>
-<li><a></a></li>
-<li><a></a></li>
+	<li><a></a></li>
+	<li><a></a></li>
 
 
-<li><a href="/blog-en/categoryview/powershell.aspx">Purple Testing</a>
-<UL class="clearbullet">
-<li><a href="/blog-en/categoryview/powershell.aspx">Information Gathering</a>
-<li><a href="/blog-en/categoryview/powershell.aspx">Enumeration</a>
-<li><a href="/blog-en/categoryview/powershell.aspx">Exploitation</a>
-<li><a href="/blog-en/categoryview/powershell.aspx">Malware</a>
-<li><a href="/blog-en/categoryview/powershell.aspx">Evasion Techniques</a>
+	<li><a id="nav_page_a" href="/blog-en/categoryview/powershell.aspx">Purple Testing</a>
+	<UL class="clearbullet">
+	<li><a id="nav_page_b" href="#">Information Gathering</a>
+	<li><a id="nav_page_c" href="#">Enumeration</a>
+	<li><a id="nav_page_d" href="#">Exploitation</a>
+	<li><a id="nav_page_e" href="#">Malware</a>
+	<li><a id="nav_page_f" href="#">Evasion Techniques</a>
 
-</UL>
-<li><a></a></li>
-<li><a></a></li>
+	</UL>
+	<li><a></a></li>
+	<li><a></a></li>
 
 
-<a href="/blog-en/categoryview/powershellcryptoapi.aspx">Indicators of Compromise</a></li>
-<li><a></a></li>
+	<a href="/blog-en/categoryview/powershellcryptoapi.aspx">Indicators of Compromise</a></li>
+	<li><a></a></li>
 
 
 <li><a></a></li>
@@ -178,16 +158,50 @@ $(function () {
     
 </div><!--/span-->
 
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+		   
+			$("#nav_page_a").click(function(){
+		   	$('#content').load('Anomaly Detection.mht');
+		    		   }); 
+ 
+
+		 	 $("#nav_page_b").click(function(){
+		   	$('#content').load('2.html');
+		     		  });
+		 
+
+			$("#nav_page_c").click(function(){
+		   	$('#content').load('3.html');
+		    
+		 	  }); 
+
+			$("#nav_page_d").click(function(){
+		   	$('#content').load('4.html');
+		     	  }); 
+		
+			
+			$("#nav_page_e").click(function(){
+		   	$('#content').load('5.html');
+		       	 }); 
+ }); 
+
+</script>
+
+
+
+
             <div class="span10">
+	<div id="content"> 
                 <div>
-    <ul class="breadcrumb">
-        <li><a href="Anomaly Detection.mht">Home</a> <span class="divider">/</span></li>
-
- <a href ="#" onclick="load_home()"
-<li class="active">Main blog</li>
-    </ul>
+   	 <ul class="breadcrumb">
+        
 
 
+	<li class="active">Main blog</li>
+  	  </ul>
 
 
 
@@ -203,6 +217,8 @@ $(function () {
 
 
 
+
+</div>
 
 </div>
 
