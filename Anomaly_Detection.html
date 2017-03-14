@@ -1,28 +1,161 @@
-<p>
-    <strong>Anomaly Detection</strong>
-</p>
-<p>
-    <strong> </strong>
-    Finding critical incidents or abnormal incidents in organizations that are against the organization’s security policies is difficult now-a-days. The attacks are highly sophisticated and its detection and prevention mechanism are going to be difficult. Every organization maintains the logs in a separate centralized environment and its being processed by special SIEM or analytics software’s. Even though these frameworks unable to close the gap between the anomaly incident occurrences and detections. Machine learning in analytics and behavior based anomaly detection are helpful, it may cover more in detection but not completely. Machine learning also needs to be updated by large number of datasets means the possibility of attacks. May it fill the gap, and it should be continuously updated along with attack methodologies.
-</p>
-<p>
-    I am here to learn and write the methodologies of attacks, and its
-    detection with prevention techniques also.
-</p>
-<p>
-    Here I classified the detection by target area, they are
-</p>
-<p>
-    1) Anomaly detection in Hosts
-</p>
-<p>
-    2) Anomaly detection in Network
-</p>
-<p>
-    <strong>Anomaly detection in Hosts</strong>
-</p>
-<p>
-    <strong> </strong>
-    Here I considered the term “host” means a desktop or server whether it runs
-    with any operating system.
-</p>
+<html>
+<head>
+<title>D:\uploadedFiles\c993fabdcc5dec65e761d348fc1cefb-db90de197478089\p1bb7g6a1p11ents1p6r1f81vlt4.doc</title>
+<style type="text/css">
+<!--
+body { font-family: Arial; font-size: 20.4px }
+.pos { position: absolute; z-index: 0; left: 0px; top: 0px }
+-->
+</style>
+</head>
+<body>
+<nobr><nowrap>
+<div class="pos" id="_0:0" style="top:0">
+<img name="_1100:850" src="page_001.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_100:35" style="top:35;left:100">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Anomaly detection is to find out strange or abnormal events from usual events in the given data. We</span>
+</div>
+<div class="pos" id="_50:55" style="top:55;left:50">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+can easily observe the anomalies when we visualize the data using different types of charts, algorithms and etc.</span>
+</div>
+<div class="pos" id="_50:75" style="top:75;left:50">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Here I am writing different approaches for anomaly detection in big data and I will update this section</span>
+</div>
+<div class="pos" id="_50:95" style="top:95;left:50">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+simultaneously with learning algorithms.</span>
+</div>
+<div class="pos" id="_50:127" style="top:127;left:50">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Some techniques I used in anomaly detection:</span>
+</div>
+<div class="pos" id="_75:158" style="top:158;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+1) Line Graph based anomaly detection</span>
+</div>
+<div class="pos" id="_75:178" style="top:178;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+2) Community based anomaly detection</span>
+</div>
+<div class="pos" id="_75:198" style="top:198;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+3) Density-based techniques</span>
+</div>
+<div class="pos" id="_75:218" style="top:218;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+4) Cluster analysis-based outlier detection</span>
+</div>
+<div class="pos" id="_53:249" style="top:249;left:53">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+And other techniques I will update it soon</span>
+</div>
+<div class="pos" id="_56:301" style="top:301;left:56">
+<span id="_14.0" style="font-weight:bold; font-family:Arial; font-size:14.0px; color:#000000">
+1) Line Graph based anomaly detection</span>
+</div>
+<div class="pos" id="_75:329" style="top:329;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+This is the easy approach to detect the abnormal activity in the data. The data should be near to constant</span>
+</div>
+<div class="pos" id="_75:357" style="top:357;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+values or bell shape curves or any distribution graphs.</span>
+</div>
+<div class="pos" id="_75:385" style="top:385;left:75">
+<span id="_15.0" style="font-weight:bold; font-family:Arial; font-size:15.0px; color:#000000">
+Use Case:</span>
+</div>
+<div class="pos" id="_75:413" style="top:413;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+Understanding the traffic hits over destination ports for inbound traffic.</span>
+</div>
+<div class="pos" id="_75:733" style="top:733;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+In above picture, graph was plotted on number of hits of port &#8220;135&#8221; by hour over the day. We can observe by</span>
+</div>
+<div class="pos" id="_75:761" style="top:761;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+observing the picture, there was spike at the hour 12 pm. The network traffic usually follows the bell shape</span>
+</div>
+<div class="pos" id="_75:789" style="top:789;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+curve. If any sudden rise or fall in the hits, we can identify the abnormal activity. It might also due to the</span>
+</div>
+<div class="pos" id="_75:817" style="top:817;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+network down if any sudden fall and user might uploads then traffic hits increase rather than usual and it</span>
+</div>
+<div class="pos" id="_75:845" style="top:845;left:75">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+cause for sudden rise in the graph. This is can use as watch list for traffic hits in the organization<span id="_13.2" style=" font-size:13.2px"> .</span></span>
+</div>
+<div class="pos" id="_62:898" style="top:898;left:62">
+<span id="_14.1" style="font-weight:bold; font-family:Arial; font-size:14.1px; color:#000000">
+2) Community based anomaly detection</span>
+</div>
+<div class="pos" id="_75:926" style="top:926;left:75">
+<span id="_14.1" style=" font-family:Arial; font-size:14.1px; color:#000000">
+Drawing the traffic flows between IP addresses, we can identify relations between the IP&#8217;s and also it called</span>
+</div>
+<div class="pos" id="_75:954" style="top:954;left:75">
+<span id="_14.1" style=" font-family:Arial; font-size:14.1px; color:#000000">
+Community relation diagram. If any IP contacting the more destinations, the density is changed in the</span>
+</div>
+<div class="pos" id="_0:0" style="top:1100">
+<img name="_1100:850" src="page_002.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_75:1135" style="top:1135;left:75">
+<span id="_14.3" style=" font-family:Arial; font-size:14.3px; color:#000000">
+visualization. The anomaly detection is possible by observing the graph. It goes difficult if the nodes or IP</span>
+</div>
+<div class="pos" id="_75:1163" style="top:1163;left:75">
+<span id="_14.3" style=" font-family:Arial; font-size:14.3px; color:#000000">
+addresses are large in count.</span>
+</div>
+<div class="pos" id="_75:1191" style="top:1191;left:75">
+<span id="_15.0" style="font-weight:bold; font-family:Arial; font-size:15.0px; color:#000000">
+Use Case:</span>
+</div>
+<div class="pos" id="_75:1219" style="top:1219;left:75">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Gephi is an open source software that draws network visualizations.</span>
+</div>
+<div class="pos" id="_75:1545" style="top:1545;left:75">
+<span id="_13.9" style="font-weight:bold; font-family:Arial; font-size:13.9px; color:#000000">
+3) Density-based techniques</span>
+</div>
+<div class="pos" id="_75:1926" style="top:1926;left:75">
+<span id="_12.7" style="font-weight:bold; font-family:Arial; font-size:12.7px; color:#000000">
+Use Case:<span style="font-weight:normal"> To</span><span style="font-weight:normal"> be</span><span style="font-weight:normal"> updated</span></span>
+</div>
+<div class="pos" id="_75:1977" style="top:1977;left:75">
+<span id="_13.9" style="font-weight:bold; font-family:Arial; font-size:13.9px; color:#000000">
+4) Cluster analysis-based outlier detection</span>
+</div>
+<div class="pos" id="_100:2005" style="top:2005;left:100">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+Bringing similar events together, by this we can observe the abnormal activity. Because, the abnormal or</span>
+</div>
+<div class="pos" id="_100:2033" style="top:2033;left:100">
+<span id="_14.4" style=" font-family:Arial; font-size:14.4px; color:#000000">
+outlier event was not similar to other and they are rare occurrences.</span>
+</div>
+<div class="pos" id="_0:0" style="top:2200">
+<img name="_1100:850" src="page_003.jpg" height="1100" width="850" border="0" usemap="#Map"></div>
+<div class="pos" id="_112:2235" style="top:2235;left:112">
+<span id="_14.5" style="font-weight:bold; font-family:Arial; font-size:14.5px; color:#000000">
+Use Case:<span style="font-weight:normal"> We</span><span style="font-weight:normal"> can</span><span style="font-weight:normal"> implement</span><span style="font-weight:normal"> this</span><span style="font-weight:normal"> in</span><span style="font-weight:normal"> security</span><span style="font-weight:normal"> for</span><span style="font-weight:normal"> finding</span><span style="font-weight:normal"> outliers</span><span style="font-weight:normal"> in</span><span style="font-weight:normal"> the</span><span style="font-weight:normal"> required</span><span style="font-weight:normal"> fields</span><span style="font-weight:normal"> for</span><span style="font-weight:normal"> example</span></span>
+</div>
+<div class="pos" id="_106:2263" style="top:2263;left:106">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+Splunk. We can track the suspicious process names from the list of several processes by this technique.</span>
+</div>
+<div class="pos" id="_106:2291" style="top:2291;left:106">
+<span id="_14.5" style=" font-family:Arial; font-size:14.5px; color:#000000">
+We can apply this technique for other applications for detecting outliers like traffic hits in count and etc.</span>
+</div>
+</nowrap></nobr>
+</body>
+</html>
