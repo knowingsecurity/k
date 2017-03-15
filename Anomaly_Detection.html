@@ -7,36 +7,28 @@
 <li>Cluster analysis-based outlier detection</li>
 </ul>
 <p>&nbsp;And other techniques I will update it soon</p>
-<p><strong>&nbsp;</strong></p>
-<ul>
-<li><strong>Line Graph based anomaly detection</strong></li>
-</ul>
+<p>&nbsp;</p>
+<p><strong>Line Graph based anomaly detection</strong></p>
 <p>This is the easy approach to detect the abnormal activity in the data. The data should be near to constant values or bell shape curves or any distribution graphs.</p>
 <p><strong>Use Case:</strong></p>
 <p>Understanding the traffic hits over destination ports for inbound traffic.</p>
 <p><strong>&nbsp;</strong></p>
-<p><img src="page_001.jpg" alt="" width="420" height="300" border="0" /></p>
+<p><img src="page_001.jpg" alt="" width="671" height="256" border="0" /></p>
 <p>In above picture, graph was plotted on number of hits of port &ldquo;135&rdquo; by hour over the day. We can observe by observing the picture, there was spike at the hour 12 pm. The network traffic usually follows the bell shape curve. If any sudden rise or fall in the hits, we can identify the abnormal activity. It might also due to the network down if any sudden fall and user might uploads then traffic hits increase rather than usual and it cause for sudden rise in the graph. This is can use as watch list for traffic hits in the organization.</p>
 <p>&nbsp;</p>
-<ul>
-<li><strong>Community based anomaly detection</strong></li>
-</ul>
+<p><strong>Community based anomaly detection</strong></p>
 <p>Drawing the traffic flows between IP addresses, we can identify relations between the IP&rsquo;s and also it called Community &nbsp;&nbsp;relation diagram. If any IP contacting the more destinations, the density is changed in the visualization. The anomaly detection is possible by observing the graph. It goes difficult if the nodes or IP addresses are large in count.</p>
 <p><strong>Use Case:</strong></p>
 <p>Gephi is an open source software that draws network visualizations.</p>
 <p><img src="page_002.jpg" alt="" width="420" height="300" border="0" /></p>
 <p>&nbsp;</p>
-<ul>
-<li><strong>Density-based techniques</strong></li>
-</ul>
+<p><strong>Density-based techniques</strong></p>
 <p>Detecting outlier's while plotting the graph.&nbsp;k-nearest neighbor, local outlier factor and many more variations</p>
 <p><img src="page_003.jpg" alt="" width="420" height="300" border="0" /></p>
 <p>&nbsp;</p>
 <p><strong>Use Case: </strong>To be updated</p>
 <p>&nbsp;</p>
-<ul>
-<li><strong>Cluster analysis-based outlier detection</strong></li>
-</ul>
+<p><strong>Cluster analysis-based outlier detection</strong></p>
 <p>Bringing similar events together, by this we can observe the abnormal activity. Because, the abnormal or outlier event was not similar to other and they are rare occurrences.</p>
 <p><strong>&nbsp; Use Case: </strong>We can implement this in security for finding outliers in the required fields for example &nbsp;&nbsp;&nbsp;Splunk. We can track the suspicious process names from the list of several processes by this technique.</p>
 <p>We can apply this technique for other applications for detecting outliers like traffic hits in count and etc.</p>
