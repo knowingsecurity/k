@@ -8,9 +8,16 @@
 }
 
 .changeFont
-    {
-       font-family: Corbel;
-       font-size: 20px;
+    {	
+      
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", 
+
+"Helvetica Neue", Arial, sans-serif;
+	
+	letter-spacing: 1px;
+	
+	
+       font-size: 15px;
 	     
     }
 
