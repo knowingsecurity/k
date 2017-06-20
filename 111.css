@@ -1,6 +1,7 @@
 .my-navbar {
 	border-radius: 0;
 	border: 0;
+	
 }
 
 .my-navbar .navbar-brand {
@@ -10,21 +11,20 @@
 .changeFont
     {	
       
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", 
-
-"Helvetica Neue", Arial, sans-serif;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	
 	letter-spacing: 1px;
 	
 	
-       font-size: 15px;
+       font-size: 17px;
 	     
     }
 
-.one a {
+.one  {
   margin-right: 25px;
 
 }
+
 
 
 .navbar-nav .three a {
@@ -45,44 +45,24 @@
   font-size: 15px;
 }
 
- 
-
-  
-  .dropdown-menu::before {
-    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
-    border-left: 9px solid rgba(0, 0, 0, 0);
-    border-right: 9px solid rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    left: 86px;
-    position: absolute;
-    top: -8px;
-}
-  .dropdown-menu::after {
-    border-bottom: 8px solid #373737;
-    border-left: 9px solid rgba(0, 0, 0, 0);
-    border-right: 9px solid rgba(0, 0, 0, 0);
-    content: "";
-    display: inline-block;
-    left: 130px;
-    position: absolute;
-    top: -7px;
-  }
 
 
  /*  Side Menu */
 
 .nav-side-menu {
-  overflow: auto;
+  
   font-family: Corbel;
   font-size: 12px;
   font-weight: 200;
   background-color: #2e353d;
-  position: fixed;
   top: 0px;
   width: 200px;
-  height: 100%;
+  height: calc(100% - 50px);
   color: #e1ffff;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  
 }
 .nav-side-menu .brand {
   background-color: #23282e;
@@ -124,6 +104,7 @@
   padding-right: 10px;
   vertical-align: middle;
   float: right;
+  
 }
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
@@ -216,4 +197,147 @@
 body {
   margin: 0px;
   padding: 0px;
+}
+
+ /*
+Panel
+
+*/
+.panelNav{
+  position:absolute;
+}
+
+/*
+2 html css
+
+*/
+.original .panelNav{
+  position:absolute;
+}
+.sidebar{
+  height:200px;
+ background-color:pink;
+}
+
+.main-content{
+ border:solid 1px olive;
+  
+}
+
+.margin-top100{
+  margin-top:50px;
+}
+
+.overflow{
+overflow:hidden;
+}
+
+.collapseList{
+    float: right;
+    font-family: Corbel;
+    font-size: 12px;
+    font-weight: 210;
+    top: 0px;
+    width: 290px;
+    height: calc(100% - 50px);
+    color: #000000;
+    padding-top : 10;
+    
+    
+}
+
+
+
+      
+
+ul.tree, ul.tree ul {
+    list-style: none;
+     margin: 0;
+     padding: 0;
+   } 
+   ul.tree ul {
+     margin-left: 30px;
+   }
+   ul.tree li {
+     margin: 0;
+     padding: 0 7px;
+     line-height: 20px;
+     
+     cursor:auto;   
+     border-left:1px solid rgb(100,100,100);
+   }
+   ul.tree li:last-child {
+       border-left:none;
+   }
+   ul.tree li:before {
+      position:relative;
+      top:-0.3em;
+      height:1em;
+      width:12px;
+      color:white;
+      border-bottom:1px solid rgb(100,100,100);
+      content:"";
+      display:inline-block;
+      left:-7px;
+         	 
+	
+   }
+   ul.tree li:last-child:before {
+      border-left:1px solid rgb(100,100,100);   
+   }
+
+
+
+
+
+.treeView{
+        -moz-user-select:none;
+        position:relative;
+      }
+
+      .treeView ul{
+        margin:0 0 0 -1.5em;
+        padding:0 0 0 1.5em;
+      }
+
+   
+
+        .treeView li{
+        margin:-10;
+        padding:-10;
+	list-style-position:inside;
+    	list-style-image:url('button.png');
+  	cursor:auto;  
+        
+      
+      }
+
+      .treeView li.collapsibleListOpen{
+        list-style-image:url('button-open.png');
+        cursor:pointer;
+
+      }
+
+      .treeView li.collapsibleListClosed{
+        list-style-image:url('button-closed.png');
+        cursor:pointer;
+      }
+    
+.mainpanel{
+width:100%;
+height: calc(100% - 50px);
+padding: 0;
+margin: auto;
+display: inline-block;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
