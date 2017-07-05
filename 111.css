@@ -1,13 +1,23 @@
+/*------------------------------ Over 900px Begin------------------------------------ */
 
-/*------------------------------ Main CSS ----------- */
+
+
 
 .my-navbar {
     border-radius: 0;
     border: 0;
+    
 }
 .my-navbar .navbar-brand {
     color: white;
+    font-size: 1vw;
 }
+
+.changeFont {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 1px;
+ }
+
 
 .one {
     margin-right: 25px;
@@ -22,7 +32,7 @@
 .navbar-nav > li > .three a:hover {
     color: Black !important;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 100%;
 }
 /*  Side Menu */
 
@@ -32,12 +42,12 @@
     font-weight: 200;
     background-color: #2e353d;
     top: 0px;
-    width: 10%;
+    width: 11vw;
     height: calc(100% - 50px);
     color: #e1ffff;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 .nav-side-menu .brand {
     background-color: #23282e;
@@ -195,7 +205,7 @@ Panel
     margin-top: 50px;
 }
 .overflow {
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -204,10 +214,10 @@ Panel
 .collapseList {
     float: left;
     font-family: Corbel;
-    font-size: 11px;
+    font-size: 0.65vw;
     font-weight: 210;
     top: 0px;
-    width: 15%;
+    width: 14vw;
     height: calc(100% - 50px);
     color: #000000;
     padding-top: 10;
@@ -253,7 +263,7 @@ ul.tree li:last-child:before {
 /* --------------Main Panel Begins---------- */
 
 .mainpanel {
-    width: 75%;
+    width: 74vw;
     height: calc(100%-50px);
     padding: 0;
     margin: auto;
@@ -278,147 +288,18 @@ ul.tree li:last-child:before {
 
 /* --------------Main Panel Ends---------- */
 
-
-/*-------------- Large screens ----------- */
-
-@media only screen 
-and (min-width : 1824px) {
-
 }
-.changeFont {
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    letter-spacing: 1px;
-    font-size: 20px;
 
-}
 .navbar-nav > li > .three a:hover {
     color: Black !important;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 /*  Side Menu */
 
 .nav-side-menu {
     font-family: Corbel;
-    font-size: 12px;
+    font-size: 0.6vw;
 }
 
 
-
-/*------------------------------ Big Desktops ----------- */
-@media only screen and (max-width:1680px) and (min-width:1500px) {
-/* Styles */
-
-.changeFont {
-    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-
-/*  Side Menu */
-
-.nav-side-menu {
-    font-family: Corbel;
-    font-size: 10px;
-}
-
-/* --------------Right Collapse List Begins ---------- */
-
-.collapseList {
-    float: left;
-    font-family: Corbel;
-    font-size: 11px;
-    font-weight: 210;
-}    
-/* --------------Right Collapse List Ends---------- */
-
-
-/* --------------Main Panel Begins---------- */
-
-.mainpanel {
-    width: 75%;
-    height: calc(100%-50px);
-    padding: 0;
-    margin: auto;
-    display: inline-block;
-}
-/* remove spacing between middle columns */
-
-.no-gutter [class*='col-'] {
-    padding-right: 0;
-    padding-left: 2;
-}
-/* remove right padding from first column */
-
-.no-gutter [class*='col-']: {
-    padding-right: 0;
-}
-.rightpanel {
-    margin-auto: 100px;
-    padding: 0;
-    float: right;
-}
-
-/* --------------Main Panel Ends---------- */
-
-/*------------------------------ Big Desktops End------------------------ */
-
-
-
-/*------------------------------ 1366 Size Desktops Start ----------- -----------*/
-
-@media only screen and (max-width:1440px) and (min-width:1280px) {
-/* Styles */
-
-.changeFont {
-    letter-spacing: 1px;
-    font-size: 13px;
-}
-
-/*  Side Menu */
-
-.nav-side-menu {
-    font-family: Corbel;
-    font-size: 14px;
-}
-
-/* --------------Right Collapse List Begins ---------- */
-
-.collapseList {
-    float: left;
-    font-family: Corbel;
-    font-size: 11px;
-    font-weight: 210;
-}    
-/* --------------Right Collapse List Ends---------- */
-
-
-/* --------------Main Panel Begins---------- */
-
-.mainpanel {
-    width: 75%;
-    height: calc(100%-50px);
-    padding: 0;
-    margin: auto;
-    display: inline-block;
-}
-/* remove spacing between middle columns */
-
-.no-gutter [class*='col-'] {
-    padding-right: 0;
-    padding-left: 2;
-}
-/* remove right padding from first column */
-
-.no-gutter [class*='col-']: {
-    padding-right: 0;
-}
-.rightpanel {
-    margin-auto: 100px;
-    padding: 0;
-    float: right;
-}
-
-/* --------------Main Panel Ends---------- */
-
-/*------------------------------ 1366 Size Desktops Start End------------------------ */
