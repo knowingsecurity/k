@@ -37,11 +37,11 @@
 
 /*  ------Side Menu ---------*/
 
-#sidebar-wrapper {
+.sidebar-wrapper {
     position: fixed;
     
 }
-#sidebar {
+.sidebar {
     position: relative;
     overflow-y: auto;
 }
