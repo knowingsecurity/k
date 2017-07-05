@@ -34,11 +34,21 @@
     font-weight: bold;
     font-size: 100%;
 }
-/*  Side Menu */
+
+/*  ------Side Menu ---------*/
+
+#sidebar-wrapper {
+    position: fixed;
+    
+}
+#sidebar {
+    position: relative;
+    overflow-y: auto;
+}
 
 .nav-side-menu {
     font-family: Corbel;
-    position: relative;
+     position: relative;
     font-weight: 200;
     background-color: #2e353d;
     top: 0px;
@@ -47,7 +57,7 @@
     color: #e1ffff;
     padding: 0;
     margin: 0;
-    overflow: auto;
+    overflow-y: auto;
 }
 .nav-side-menu .brand {
     background-color: #23282e;
@@ -267,7 +277,7 @@ ul.tree li:last-child:before {
     height: calc(100%-50px);
     padding: 0;
     margin: auto;
-    overflow:scroll;
+    display: inline-block;
 }
 /* remove spacing between middle columns */
 
