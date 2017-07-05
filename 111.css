@@ -38,7 +38,7 @@
 
 .nav-side-menu {
     font-family: Corbel;
-    
+    position: relative;
     font-weight: 200;
     background-color: #2e353d;
     top: 0px;
