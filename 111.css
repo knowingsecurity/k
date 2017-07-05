@@ -267,7 +267,6 @@ ul.tree li:last-child:before {
     height: calc(100%-50px);
     padding: 0;
     margin: auto;
-    display: inline-block;
     overflow:scroll;
 }
 /* remove spacing between middle columns */
