@@ -189,18 +189,11 @@ Panel
 
 */
 
-.panelNav {
-    position: absolute;
-     
-}
 
 .original .panelNav {
     position: absolute;
 }
-.sidebar {
-    height: 200px;
-    
-}
+
 .main-content {
     border: solid 1px olive;
 }
@@ -208,11 +201,7 @@ Panel
     margin-top: 50px;
 }
 
-   .panelbody {
-overflow: auto;
-}
-
-
+   
 
 
 /* --------------Right Collapse List Begins ---------- */
