@@ -191,7 +191,7 @@ Panel
 
 .panelNav {
     position: absolute;
-     overflow: auto;
+     
 }
 
 .original .panelNav {
@@ -208,7 +208,10 @@ Panel
     margin-top: 50px;
 }
 
-   
+   .panelbody {
+overflow: auto;
+}
+
 
 
 
