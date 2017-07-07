@@ -1,7 +1,3 @@
-/*------------------------------ Over 900px Begin------------------------------------ */
-
-
-
 
 .my-navbar {
     border-radius: 0;
@@ -43,7 +39,7 @@
 }
 .sidebar {
     position: relative;
-    overflow-y: auto;
+  
 }
 
 .nav-side-menu {
