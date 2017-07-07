@@ -191,6 +191,7 @@ Panel
 
 .panelNav {
     position: absolute;
+     overflow: auto;
 }
 
 .original .panelNav {
@@ -206,9 +207,9 @@ Panel
 .margin-top100 {
     margin-top: 50px;
 }
-.overflow {
-    overflow: auto;
-}
+
+   
+
 
 
 /* --------------Right Collapse List Begins ---------- */
