@@ -38,6 +38,10 @@
     
 }
 
+.panel-body{
+overflow:scroll;
+}
+
 .nav-side-menu {
     font-family: Corbel;
      position: relative;
