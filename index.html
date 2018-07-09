@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Tool Kit</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class='container'>
+        <a class="navbar-brand" href="#">
+          <!--
+        <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      -->
+        IRTk
+         </a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapseLinks' aria-expanded='false' aria-label='Toggle Navigation'>
+        <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse justify-content-end' id='navbarCollapseLinks'>
+          <ul class='navbar-nav'>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Home</a>
+            </li>
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>About</a>
+            </li>
+            <!--
+            <li class='nav-item'>
+              <a href='#' class='nav-link'>Products</a>
+            </li>
+            -->
+
+            </li>
+          </ul>
+
+
+        <!--   <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        
+
+
+
+
+
+
+        </div>
+      </div>
+    </nav>
+        <div class="container">
+           <div class="row py-3">
+            <div class="col-12">
+              <div class="alert mb-0 alert-primary" role="alert" style='min-height: 50px;'></div>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-10 col-md-2 mx-auto pr-0">
+             
+                <div class="row">
+                  <div class="col-12">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action py-2" id="list-static_malware-list" data-toggle="list" href="#list-static_malware" role="tab" aria-controls="static_malware">Static Malware Analysis</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-url_analysis-list" data-toggle="list" href="#list-url_analysis" role="tab" aria-controls="url_analysis">URL Analysis</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-text_conversion-list" data-toggle="list" href="#list-text_conversion" role="tab" aria-controls="text_conversion">Encode/Decode</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-encrypt-list" data-toggle="list" href="#list-encrypt" role="tab" aria-controls="encrypt">Encrypt/Decrypt</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-reputatuion-list" data-toggle="list" href="#list-reputatuion" role="tab" aria-controls="reputatuion">Reputation Lookup</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-message_header-list" data-toggle="list" href="#list-message_header" role="tab" aria-controls="message_header">Message Header Analysis</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-lookup-list" data-toggle="list" href="#list-lookup" role="tab" aria-controls="lookup">IP Whois Lookup</a>
+                        <a class="list-group-item list-group-item-action py-2" id="list-dig_dns-list" data-toggle="list" href="#list-dig_dns" role="tab" aria-controls="dig_dns">Dig DNS</a>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+             </div>
+          </div>
+          <div class="col-10 mx-auto">
+             <div class="card" style='min-height: 700px;'>
+                
+                <div class="card-body">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-static_malware" role="tabpanel" aria-labelledby="list-static_malware-list">
+                      <h6 class="header mb-5">Malware Analysis</h6>
+                      
+                       <script js>
+                          /* show file value after file select */
+                             $('.custom-file-input').on('change', function() { 
+                             let fileName = $(this).val().split('\\').pop(); 
+                             $(this).next('.custom-file-label').addClass("selected").html(fileName); 
+                              });
+                      </script>
+                      <div class="col-5 mx-auto">
+
+                          <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                          </div>
+                        <p class="font-weight-light">Upload your file to search for Malicious Patterns</p>
+                      </div>
+                    </div>
+                   
+                    <div class="tab-pane fade" id="list-url_analysis" role="tabpanel" aria-labelledby="list-url_analysis-list">
+                      <h6>URL Analysis</h6>
+                      URL Analysis</div>
+                    <div class="tab-pane fade" id="list-text_conversion" role="tabpanel" aria-labelledby="list-text_conversion-list">
+                      <h6>Encoding</h6>
+                      Enocde/Decode</div>
+                    <div class="tab-pane fade" id="list-encrypt" role="tabpanel" aria-labelledby="list-encrypt-list">
+                      <h6>Crytpo</h6>
+                      Encrypt</div>
+                    <div class="tab-pane fade" id="list-reputatuion" role="tabpanel" aria-labelledby="list-reputatuion-list">
+                      <h6>Reputation</h6>
+                      Reputauion</div>
+                    <div class="tab-pane fade" id="list-message_header" role="tabpanel" aria-labelledby="list-message_header-list">
+                      <h6>Email Header Analysis</h6>
+                      Message Header</div>
+                    <div class="tab-pane fade" id="list-lookup" role="tabpanel" aria-labelledby="list-lookup-list">
+                      <h6>IP Lookup</h6>
+                      LookUP</div>
+                    <div class="tab-pane fade" id="list-dig_dns" role="tabpanel" aria-labelledby="list-dig_dns-list">
+                      <h6>Dig DNS</h6>
+                      DNS</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="container">
+        <div class="row">
+            <div class="col-12 mt-2">
+              <div class="alert  mb-0 alert-primary" role="alert" style='min-height: 100px;'></div>
+            </div>
+          </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
